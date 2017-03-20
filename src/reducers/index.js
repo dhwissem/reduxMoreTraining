@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
-import { routerReducer } from "react-router-redux";
-import { reducer as formReducer } from "redux-form";
+import users from './users';
 
-// main reducers
 export const reducers = combineReducers({
-  routing: routerReducer,
-  form: formReducer,
-  // your reducer here
+  users: users
 });
+
+export default function reducerCall(state, action, reducerClass) {
+
+}
+
+https://youtu.be/l9QC2ajMelg?list=PLJBrYU54JD2pTblB20OmV7GL6H5J-p2g8
